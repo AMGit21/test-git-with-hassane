@@ -42,3 +42,8 @@ git push --set-upstream origin main
 # 11
 
 git log
+
+# 12
+
+git branch hello-world-images
+git branch
