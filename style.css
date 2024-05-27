@@ -1,3 +1,10 @@
+:root {
+  --bgColor: rgba(0, 73, 128, 0.843);
+  --textColor: rgba(254, 254, 255, 0.758);
+  --input-border-bottom-color: rgba(128, 0, 128, 0.758);
+  --boxShadow: 1px 3px 6px gray;
+  --inputBoxShadow: 1px 2px 5px rgba(0, 0, 0, 0.6);
+}
 .registration {
   display: flex;
   flex-direction: column;
@@ -5,9 +12,9 @@
   align-items: flex-start;
   width: 45%;
   margin: 50px auto;
-  background-color: rgba(221, 160, 221, 0.761);
+  background-color: var(--bgColor);
   border: none;
-  box-shadow: 1px 3px 6px gray;
+  box-shadow: var(--boxShadow);
   padding: 10px;
   border-radius: 5px;
 }
@@ -23,7 +30,7 @@
 }
 .hrLine {
   border: none;
-  border-top: 1px solid rgba(128, 0, 128, 0.615);
+  border-top: 1px solid var(--textColor);
   width: 100%;
 }
 .mailWrapper {
@@ -35,7 +42,7 @@ span {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  color: purple;
+  color: var(--textColor);
 }
 .wrapper {
   width: inherit;
@@ -55,11 +62,11 @@ input {
   height: 30px;
   width: 170px;
   border: none;
-  border-bottom: 2px solid purple;
-  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.624);
+  border-bottom: 2px solid var(--input-border-bottom-color);
+  box-shadow: var(--inputBoxShadow);
   border-radius: 5px;
 }
 ::placeholder {
   padding-left: 10px;
-  color: rgba(128, 0, 128, 0.5);
+  color: var(--input-border-bottom-color);
 }
